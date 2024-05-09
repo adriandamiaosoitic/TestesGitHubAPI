@@ -35,12 +35,12 @@ async function updateIssueOnNewComment() {
 
 
     // Update the issue with the new comment
-    // await octokit.issues.createComment({
-    //   owner: payload.repository.owner.login,
-    //   repo: payload.repository.name,
-    //   issue_number: issueNumber,
-    //   body: `A new comment was added: "${commentBody}"`,
-    // });
+    await octokit.issues.createComment({
+      owner: payload.repository.owner.login,
+      repo: payload.repository.name,
+      issue_number: issueNumber,
+      body: `A new comment was added: "${commentBody}"`,
+    });
 
     console.log("Issue updated successfully with the new comment.");
   } catch (error) {
