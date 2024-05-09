@@ -18,11 +18,11 @@ async function updateIssueOnNewComment() {
     // const issueNumber = payload.issue.number;
     const issueNumber = 3;
 
-    proc
-
     const columns = await octokit.rest.projects.listColumns(108);
 
     const variavel = columns;
+
+    process.env.TESTE = columns;
 
     // const column = columns.find((item) => item.title === 'Todo') || ''; 
 
