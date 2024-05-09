@@ -19,7 +19,7 @@ async function updateIssueOnNewComment() {
     const issueNumber = 3;
 
     // Update the issue with the new comment
-    await octokit.issues.update({
+    await octokit.issues.createComment({
       owner: payload.repository.owner.login,
       repo: payload.repository.name,
       issue_number: issueNumber,
