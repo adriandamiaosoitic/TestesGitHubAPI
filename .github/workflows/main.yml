@@ -21,9 +21,9 @@ jobs:
         run: npm install
 
       - name: Imprimir conteúdo de GITHUB_EVENT_PATH
-      run: |
-        echo "Conteúdo de GITHUB_EVENT_PATH:"
-        cat $GITHUB_EVENT_PATH
+        run: |
+          echo "Conteúdo de GITHUB_EVENT_PATH:"
+          cat $GITHUB_EVENT_PATH
 
       - name: Update issue on new comment
         env:
