@@ -18,7 +18,7 @@ async function updateIssueOnNewComment() {
     // const issueNumber = payload.issue.number;
     const issueNumber = 3;
 
-    const columns = await octokit.rest.projects.listColumns({ project_id: 5 });
+    const columns = await octokit.projects.listColumns({ project_id: 5 });
 
     const variavel = columns;
 
