@@ -29,6 +29,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-        run: | 
+        run: |
           node update-issue.js
           cat $TESTE
