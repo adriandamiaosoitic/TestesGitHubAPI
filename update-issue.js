@@ -20,9 +20,9 @@ async function updateIssueOnNewComment() {
 
     // const columns = await octokit.projects.listColumns({ project_id: 5 });
 
-    const variavel = columns;
+    // const variavel = columns;
 
-    process.env.TESTE = columns;
+    // process.env.TESTE = columns;
 
     // const column = columns.find((item) => item.title === 'Todo') || ''; 
 
