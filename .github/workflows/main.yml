@@ -26,7 +26,7 @@ jobs:
       - name: Imprimir conteúdo de GITHUB_EVENT_PATH
         run: |
           echo "Conteúdo de Variavel:"
-          echo $variavel
+          echo $VARIAVEL
 
       - name: Imprimir conteúdo de GITHUB_EVENT_PATH
         run: |
