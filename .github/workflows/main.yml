@@ -8,6 +8,9 @@ jobs:
   update-issue:
     runs-on: ubuntu-latest
 
+    env:
+      VARIAVEL: ${{ toJSON(variavel) }}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -19,6 +22,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Imprimir conteúdo de GITHUB_EVENT_PATH
+        run: |
+          echo "Conteúdo de Variavel:"
+          echo $variavel
 
       - name: Imprimir conteúdo de GITHUB_EVENT_PATH
         run: |

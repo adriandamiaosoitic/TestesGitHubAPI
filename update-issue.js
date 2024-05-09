@@ -18,6 +18,22 @@ async function updateIssueOnNewComment() {
     // const issueNumber = payload.issue.number;
     const issueNumber = 3;
 
+    proc
+
+    const columns = await octokit.rest.projects.listColumns(108);
+
+    const variavel = columns;
+
+    // const column = columns.find((item) => item.title === 'Todo') || ''; 
+
+    // await octokit.rest.projects.createCard({
+    //     project.c,
+    //     note,
+    //     content_id,
+    //     content_type,
+    //   });
+
+
     // Update the issue with the new comment
     await octokit.issues.createComment({
       owner: payload.repository.owner.login,
