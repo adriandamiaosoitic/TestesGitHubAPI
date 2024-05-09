@@ -14,7 +14,7 @@ async function updateIssueOnNewComment() {
     // Extract necessary information from the payload
 
     // const commentBody = payload.comment.body;
-    const commentBody = 'payload.comment.body';
+    const commentBody = payload.comment.user.login ?? '';
     // const issueNumber = payload.issue.number;
     const issueNumber = 3;
 
